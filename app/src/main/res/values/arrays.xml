@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="order_statuses">
+        <item>En_attente_de_confirmation</item>
+        <item>Commande_confirmée</item>
+        <item>Commande_expédiée</item>
+        <item>Commande_livrée</item>
+    </string-array>
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:padding="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Image du produit -->
+        <ImageView
+            android:id="@+id/picCart"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/grey_bg"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Infos texte -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/picCart"
+            app:layout_constraintBottom_toBottomOf="@id/picCart"
+            app:layout_constraintStart_toEndOf="@id/picCart"
+            app:layout_constraintEnd_toStartOf="@id/cartControlsLayout">
+
+            <TextView
+                android:id="@+id/TitleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom du produit"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/feeEachItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15€"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stockTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En stock"
+                android:textColor="@color/green"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/totalEachItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total : 30€"
+                android:textColor="@color/green"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Contrôle Quantité -->
+        <LinearLayout
+            android:id="@+id/cartControlsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/grey_bg2"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            app:layout_constraintTop_toTopOf="@id/picCart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/picCart">
+
+            <TextView
+                android:id="@+id/minusCartBtn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:background="@drawable/white_bg_oval"
+                android:text="-"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/numberItemTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:paddingHorizontal="12dp"
+                android:text="1"
+                android:textSize="16sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/plusCartBtn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:background="@drawable/green_bg_oval"
+                android:text="+"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- Titre tailles -->
+        <TextView
+            android:id="@+id/textViewSizesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tailles disponibles"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/picCart"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Liste des tailles -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sizeList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:clipToPadding="false"
+            app:layout_constraintTop_toBottomOf="@id/textViewSizesTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

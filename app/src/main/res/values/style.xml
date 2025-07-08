@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- styles.xml -->
+    <style name="roundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+
+
+
+    </style>
+    <style name="CustomRadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="colorControlActivated">@color/green</item> <!-- couleur du cercle sélectionné -->
+        <item name="android:textColor">@color/green</item> <!-- couleur du texte -->
+    </style>
+
+
+        <style name="BottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+            <item name="android:backgroundDimEnabled">true</item>
+            <item name="android:backgroundDimAmount">0.6</item>
+            <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+        </style>
+
+        <style name="CustomBottomSheetStyle" parent="Widget.MaterialComponents.BottomSheet.Modal">
+            <item name="shapeAppearanceOverlay">@style/ShapeAppearanceBottomSheet</item>
+        </style>
+
+        <style name="ShapeAppearanceBottomSheet" parent="">
+            <item name="cornerFamily">rounded</item>
+            <item name="cornerSizeTopLeft">16dp</item>
+            <item name="cornerSizeTopRight">16dp</item>
+        </style>
+
+</resources>

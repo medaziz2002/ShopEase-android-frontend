@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Message de l'utilisateur (à droite) -->
+    <LinearLayout
+        android:id="@+id/userMessageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:visibility="gone"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:id="@+id/tvUserMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_message_user"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/ivUserAvatar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/profile_placeholder"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/circle_white_background"
+            android:padding="4dp"/>
+    </LinearLayout>
+
+    <!-- Message du bot (à gauche) -->
+    <LinearLayout
+        android:id="@+id/botMessageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:visibility="gone"
+        android:layout_marginBottom="4dp">
+
+        <!-- Avatar du bot -->
+        <ImageView
+            android:id="@+id/ivBotAvatar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_chat"
+            android:padding="4dp" />
+        <!-- Petite icône dans la bulle -->
+
+
+        <!-- Message bubble avec icône intégrée -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_message_bot"
+            android:padding="10dp"
+            android:maxWidth="280dp"
+            android:gravity="center_vertical">
+
+
+
+            <!-- Texte du message -->
+            <TextView
+                android:id="@+id/tvBotMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

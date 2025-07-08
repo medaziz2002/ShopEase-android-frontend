@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#008b86</color>
+    <color name="lightGrey">#efefef</color>
+    <color name="grey">#919191</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="teal_500">#009688</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="green_200">#A5D6A7</color>
+    <color name="green_300">#81C784</color>
+    <color name="colorGreen">#4CAF50</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="purple">#9868d3</color>
+    <color name="lightPurple">#f0e9fa</color>
+    <color name="darkPurple">#6735a4</color>
+    <color name="light_gray_background">#FAFAFA</color>
+    <color name="card_blue">#3F51B5</color>
+    <color name="card_green">#4CAF50</color>
+    <color name="card_orange">#FFC107</color>
+    <color name="yellow">#E6E652</color>  <!-- jaune vif -->
+
+    <color name="card_red">#F44336</color>
+    <color name="card_purple">#9C27B0</color>
+    <color name="ripple_white">#40FFFFFF</color>
+    <color name="card_stroke">#E0E0E0</color>
+    <color name="light_grey">#F5F5F5</color>
+    <color name="red">#FF5252</color>
+    <color name="gray">#808080</color>
+    <color name="unread_notif_bg">#F0F9F0</color>
+    <color name="notification_time">#757575</color>
+    <color name="gray_medium">#A5D6A7</color>
+    <color name="gray_light">#E8F5E8</color>
+    <color name="green_primary">#4CAF50</color>
+    <color name="input_background_green">#F1F8E9</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="green_light">#C8E6C9</color>
+    <color name="chat_messages_bg">#F8F9FA</color>
+</resources>
